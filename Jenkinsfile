@@ -1,12 +1,12 @@
 pipeline{
     agent any
     environment{
-        BranchName = 'master'
+        Tool = 'Jenkins'
     }
     stages{
         stage("ScenariosFromGIT"){
             steps{
-                echo "\n hello world $BranchName\n\n\n\n\n"
+                echo "\n hello world $Tool\n\n\n\n\n"
             }
         }
     }
